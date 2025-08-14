@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GadgetGroove - Phones, Laptops & More</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">GadgetGroove</div>
+            <ul class="nav-links">
+                <li><a href="#phones">Phones</a></li>
+                <li><a href="#laptops">Laptops</a></li>
+                <li><a href="#accessories">Accessories</a></li>
+                <li><a href="login.html" class="login-btn">Login</a></li>
+            </ul>
+
+            <form class="search-bar">
+                <input type="search" placeholder="Search products...">
+                <button type="submit"><i class="fas fa-search"></i></button>
+            </form>
+
+            <div class="theme-switcher">
+                <p>Theme:</p>
+                <div class="color-dot" data-color="default" role="button" aria-label="Set default theme"></div>
+                <div class="color-dot" data-color="mint" role="button" aria-label="Set mint theme"></div>
+                <div class="color-dot" data-color="lavender" role="button" aria-label="Set lavender theme"></div>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Find Your Next Device</h1>
+            <p>Unbeatable prices on the latest tech. Fun, fast, and delivered to you.</p>
+        </section>
+
+        <section id="phones" class="product-grid">
+            <h2>Latest Phones 📱</h2>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+        </section>
+
+        <section id="laptops" class="product-grid">
+            <h2>Powerful Laptops 💻</h2>
+            <div class="skeleton-card"></div>
+            <div class="skeleton-card"></div>
+        </section>
+
+         <section id="accessories" class="product-grid">
+            <h2>Cool Accessories 🎧</h2>
+            <div class="skeleton-card"></div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ</a>
+        </div>
+        <p>&copy; 2025 GadgetGroove. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

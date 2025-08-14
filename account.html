@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Account - GadgetGroove</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="info-page-container">
+        <a href="index.html" class="logo back-home-logo">GadgetGroove</a>
+        <div class="info-header">
+            <h1>My Account</h1>
+            <p>Manage your orders, addresses, and personal details.</p>
+        </div>
+
+        <div class="account-layout">
+            <aside class="account-nav">
+                <ul>
+                    <li><button class="account-nav-link active" data-target="profile">My Profile</button></li>
+                    <li><button class="account-nav-link" data-target="orders">Order History</button></li>
+                    <li><button class="account-nav-link" data-target="addresses">Saved Addresses</button></li>
+                    <li><a href="index.html" class="logout-link">Logout</a></li>
+                </ul>
+            </aside>
+
+            <main class="account-content">
+                <div class="account-panel active" id="profile">
+                    <h2>My Profile</h2>
+                    <form>
+                        <div class="input-group">
+                            <label for="acc-name">Full Name</label>
+                            <input type="text" id="acc-name" value="Bola Adekunle" disabled>
+                        </div>
+                        <div class="input-group">
+                            <label for="acc-email">Email Address</label>
+                            <input type="email" id="acc-email" value="bola.adekunle@example.com" disabled>
+                        </div>
+                        <button type="button" class="login-submit-btn">Edit Profile</button>
+                    </form>
+                </div>
+
+                <div class="account-panel" id="orders">
+                    <h2>Order History</h2>
+                    <div class="order-item">
+                        <p><strong>Order #GG-1056</strong> - August 5, 2025</p>
+                        <p>Status: <span class="status-delivered">Delivered</span></p>
+                        <p>Total: $1213.00</p>
+                    </div>
+                     <div class="order-item">
+                        <p><strong>Order #GG-1049</strong> - July 21, 2025</p>
+                        <p>Status: <span class="status-delivered">Delivered</span></p>
+                        <p>Total: $199.00</p>
+                    </div>
+                </div>
+
+                <div class="account-panel" id="addresses">
+                    <h2>Saved Addresses</h2>
+                    <div class="address-card">
+                        <p><strong>Bola Adekunle</strong></p>
+                        <p>123 Tech Road, Jos, Plateau State, Nigeria</p>
+                        <p>+234 700 123 4567</p>
+                        <div class="address-actions">
+                            <button class="edit-btn">Edit</button>
+                        </div>
+                    </div>
+                    <button class="login-submit-btn" style="margin-top: 20px;">Add New Address</button>
+                </div>
+            </main>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
